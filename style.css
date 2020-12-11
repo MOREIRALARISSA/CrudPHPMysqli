@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #ebf2f5;
+  overflow-x: hidden;
+}
+
+body .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .container .sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #15c3d6;
+  width: 300px;
+  color: white;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  padding: 30px 0;
+  font-weight: 800;
+}
+
+.sidebar form {
+  padding: 0 2rem;
+}
+
+.sidebar form fieldset {
+  border: 0;
+  font-weight: 600;
+}
+
+.sidebar form fieldset:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ebf2f5;
+}
+
+.sidebar form fieldset:first-child .input-block {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+fieldset:first-child .button-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset:first-child .button-block input {
+  width: 48%;
+  border: 0;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  padding: 0.2rem 0rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+fieldset:first-child .button-block input:first-child {
+  background: #0275d8;
+}
+
+fieldset:first-child .button-block input:last-child {
+  background: #d9534f;
+}
+
+.sidebar form fieldset + fieldset .input-block {
+  margin-top: 1rem;
+}
+
+fieldset + fieldset .button-block input {
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #5cb85c;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sidebar form fieldset legend {
+  text-align: center;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block input {
+  border: 0;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}
+
+.button-block {
+  margin: 0.5rem 0;
+}
+
+.button-block input {
+  cursor: pointer;
+}
+
+.table-container {
+  width: 100%;
+  height: fit-content;
+  height: -webkit-fill-available;
+  margin: 2rem 3rem 0 21.5rem;
+}
+
+.table-container div {
+  padding: 2rem 3rem;
+  background: white;
+  border: 1px solid #d3e2e5;
+  width: 100%;
+}
+
+.table-container h1 {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #4d6f80;
+}
+
+.table-container table {
+  border: 1px solid #dde3f0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #5c8599;
+  font-weight: 600;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #dde3f0;
+  padding: 0.4rem;
+}
